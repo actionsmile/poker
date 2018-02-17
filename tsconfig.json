@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "outDir": "build",
+        "sourceMap": true,
+        "noUnusedLocals": true,
+        "preserveConstEnums": true,
+        "removeComments": true,
+        "module": "commonjs",
+        "target": "esnext",
+        "baseUrl": "src",
+        "jsx": "react"
+    },
+    "include": [
+        "./src/**/*",
+        "__tests__/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
