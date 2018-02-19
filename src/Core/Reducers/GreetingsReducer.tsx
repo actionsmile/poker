@@ -1,4 +1,4 @@
-import {IGreetingsState} from './../Models/GreetingsModel';
+import { IGreetingsState } from './../Models';
 
 export const init = {
     get state(): IGreetingsState {

@@ -1,3 +1,7 @@
+export interface IAppState {
+    greetings: IGreetingsState;
+}
+
 export interface IGreetingsState {
     title: string;
     home?: ILink;

@@ -4,8 +4,8 @@ import { Provider } from 'react-redux';
 import { Route, Router } from 'react-router';
 import { createStore } from 'redux';
 
+import { MainPage } from 'Components/WelcomeScreen/Pages/MainPage';
 import { appReducers } from 'Core/Reducers/AppReducers';
-import { MainPage } from './Pages/MainPage';
 
 export class IndexComponent extends React.Component {
 
