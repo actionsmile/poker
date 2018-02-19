@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
-import {IAppState} from 'Core/Models/CoreModels';
+import { IAppState } from 'Core/Models';
 
-import {GreetingsReducer as greetings} from './GreetingsReducer';
+import { GreetingsReducer as greetings } from './GreetingsReducer';
 
 export const appReducers = combineReducers<IAppState>({
     greetings
