@@ -1,13 +1,14 @@
 import * as React from 'react';
-import { PageFooter } from './../Components/PageFooter';
+import * as Components from './../Components';
 
 export class MainPage extends React.Component {
 
     public render(): JSX.Element {
         return (
             <div className="hero is-dark is-fullheight">
-                <div className="hero-body"></div>
-                <PageFooter />
+                <Components.Header />
+                <Components.Body />
+                <Components.Footer />
             </div>
         );
     }
