@@ -5,6 +5,9 @@ exports[`MainPage component Matches Snapshot 1`] = `
   className="hero is-dark is-fullheight"
 >
   <div
+    className="hero-head"
+  />
+  <div
     className="hero-body"
   />
   <div
