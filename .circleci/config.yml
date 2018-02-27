@@ -1,0 +1,39 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: node:8.0
+    steps:
+      - run:
+          name: "Checking Versions"
+          command: |
+            node --version
+            npm --version
+      - checkout
+      - run:
+          name: Install Yarn
+          command: npm install -g yarn
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: Install dependencies
+          command: yarn
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+      - run:
+          name: Linting
+          command: yarn lint:ts
+      - run:
+          name: Testing
+          command: yarn test
+      - run:
+          name: Packing
+          command: yarn start
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - build
