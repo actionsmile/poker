@@ -1,4 +1,9 @@
 version: 2
+
+dependencies:
+  override:
+    - yarn
+
 jobs:
   build:
     docker:
@@ -10,9 +15,6 @@ jobs:
             node --version
             npm --version
       - checkout
-      - run:
-          name: Install Yarn
-          command: npm install -g yarn
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
