@@ -1,7 +1,9 @@
 # Clean React Typescript app
-[![supported by Scriptor](https://img.shields.io/badge/supports%20by-Scriptor-orange.svg?colorB=e74c3c)](https://www.scriptor.me) [![Travis CI Build Status](https://img.shields.io/travis/actionsmile/poker.svg)](https://travis-ci.org/actionsmile/poker) [![CircleCI](https://circleci.com/gh/actionsmile/poker/tree/master.svg?style=svg)](https://circleci.com/gh/actionsmile/poker/tree/master)
+[![supported by Scriptor](https://img.shields.io/badge/supported%20by-Scriptor-orange.svg?colorB=e74c3c)](https://www.scriptor.me) [![Travis CI Build Status](https://img.shields.io/travis/actionsmile/poker.svg)](https://travis-ci.org/actionsmile/poker) [![CircleCI](https://circleci.com/gh/actionsmile/poker/tree/master.svg?style=svg)](https://circleci.com/gh/actionsmile/poker/tree/master)
 
 [![Made with Bulma](https://www.scriptor.me/badges/bulma.png)](https://bulma.io)
+
+По факту попытка собрать проект «с нуля» без всяких хелперов типа `create-react-app`
 
 :beers: Этот проект в конечном виде своем будет представлять из себя веб-приложение для «Покер-планирования». Зайдя на сайт можно либо создать сессию, либо присоединиться к ней.
 
